@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoj- Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <header>
+        <div class="logo">KHOJ</div>
+        <nav>
+            <div class="toggle" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="tour.html">Register</a></li>
+                <li><a href="result.html">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="text-align: center;     font-size: 48px;
+">Our Events</h1>
+    <div class="container">
+        <ul class="event-list">
+            <!-- Event 1 -->
+            <li class="event-item">
+                <img src="hackathon.png" alt="Hackathon" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Hackathon</h3>
+                    <p class="event-description">Hackathon invites participants to display their web designing skills and creative thinking skills with their paired partners. The event would be 2 hour coding challenge, after a brief workshop of 1 hour</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal1')">More Details</button>
+                </div>
+            </li>
+            <!-- Event 2 -->
+            <li class="event-item">
+                <img src="eureka.jpeg" alt="Eureka" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Eureka</h3>
+                    <p class="event-description">An exquisite display of science and technology, Where participants showcase their scientific temperament and problem-solving skills to solve real-world problems.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal2')">More Details</button>
+                </div>
+            </li>
+
+            <li class="event-item">
+                <img src="creativa.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Creativa</h3>
+                    <p class="event-description">Creativa invites students from grades 9-12 to showcase their creativity and design skills by creating posters using various images on a topic given on the spot.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal3')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="sharktank.jpg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Shark Tank</h3>
+                    <p class="event-description">The "Shark Tank" event invites participants to pitch their innovative business ideas to a panel of judges. Teams will present their concepts, demonstrate market understanding, and answer challenging questions.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal4')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="bullseye.jpg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Bullseye</h3>
+                    <p class="event-description">The event focuses on the shooting skills of participants and their accuracy to hit the targets. Standard competition norms are to be followed. Further deliberation would be done with the respected department allowing smooth participation in the event.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal5')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="caricature.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Caricature</h3>
+                    <p class="event-description">An engaging session of creativity through caricature artwork where participants will be expressing their imagination and commentaries on pressing world issues through their artworks.
+                    </p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal6')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="numberquest.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Number Quest</h3>
+                    <p class="event-description">This exciting scavenger hunt engages students in solving maths-related riddles, puzzles, and problems, leading them to hidden objects or specific locations. Each solved problem reveals a new clue, guiding participants through a sequence of challenges until they reach the final destination.
+                    </p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal7')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="resolutions.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Resolutions</h3>
+                    <p class="event-description">A display of the historical significance of events that have shaped our future through a stage play manner in which students will design and create their own stage plays featuring key historical events of India</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal8')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="chronicles.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Chronicles</h3>
+                    <p class="event-description">Participants will produce an engaging news video report. Showcasing their skills in reporting, capturing and compelling narratives. This event celebrates the fusion of words and images in a collaborative environment with cross schools teams.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal9')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="roborun.png" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">RoboRun</h3>
+                    <p class="event-description">An accelerated clash of the fastest robots through a series of challenging obstacles. Students will have to steer their contraptions and finish the course in the least time possible.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal10')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="arguement.png" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Arguement Arena</h3>
+                    <p class="event-description">This debate competition for grades 9-12 challenges students to articulate and defend their positions on various topics, honing their critical thinking and public speaking skills. The teams would be formed on the spot by the organizers.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal11')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="cinesync.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Cine Sync</h3>
+                    <p class="event-description">Participants will shoot footage on the event's first day and the overall atmosphere. They will then edit and produce a creative music video that encapsulates the spirit and energy of the event. This challenge combines filmmaking skills with artistic vision to tell the story of the day through a dynamic and engaging video.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal12')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="salvation.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Salvation</h3>
+                    <p class="event-description">The "Salvation" event invites students from Classes 6 to 12 to interpret the theme of women's safety through a powerful dance performance, emphasizing meaningful lyrics, choreography, and synchronization. Judged on relevance, costumes, and overall presentation, this 4-minute offline event encourages creative expression while adhering to school-appropriate standards..</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal13')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="musicc.jpg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Choral Music</h3>
+                    <p class="event-description">Perform songs that envision a prosperous, united, and harmonious India by 2047, reflecting the dreams and hopes of the nation</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal14')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="citylab.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">City Lab</h3>
+                    <p class="event-description">Students design a model of a futuristic Indian city focusing on sustainable energy, advanced infrastructure, and efficient public services.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal15')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="verseclash.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Verse Clash</h3>
+                    <p class="event-description">Participants engage in a bar battle in a musical format where leading world issues in a futuristic world will be discussed.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal16')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="ff.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Future Fables</h3>
+                    <p class="event-description">Participants indulge in a role play where they will display a futuristic hypothetical scenario that might happen</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal17')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="coderace.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Code Race</h3>
+                    <p class="event-description">Participants solve six coding challenges in Python, earning 100 points for the first correct solution and 70 points for other correct submissions. The highest total score wins, with a preliminary round on HackerRank held prior.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal18')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="frenetic.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Frenetic</h3>
+                    <p class="event-description">"Frenetic" engages students from Classes 3 to 5 in a powerful dance performance on the theme of child servitude, judged on song relevance, choreography, and synchronization. This 4-minute event encourages creative expression with appropriate costumes and props, emphasizing the importance of the theme.</p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal19')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="instrument.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Instrumental</h3>
+                    <p class="event-description">The Instrumental competition focuses on the classical tabla performance in Teentaal (16 Matra), where duet participants will showcase their mastery of rhythm, timing, and technique within a 3-minute performance. </p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal20')">More Details</button>
+                </div>
+            </li>
+            <li class="event-item">
+                <img src="graffiti.jpeg" alt="Event 21" class="event-image">
+                <div class="event-details">
+                    <h3 class="event-title">Graffiti</h3>
+                    <p class="event-description">The Graffiti Art competition, "My Religion is Humanity," challenges students to creatively express the unifying essence of humanity using acrylic colors and spray paints on a 6x4 feet canvas. </p>
+                    <button type="button" class="btn btn-primary" onclick="openModal('eventModal21')">More Details</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Modals -->
+    <div class="modal" id="eventModal1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Hackathon</h5>
+                <button class="btn-close" onclick="closeModal('eventModal1')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Detailed information about the Hackathon event goes here.</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="eventModal2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Eureka</h5>
+                <button class="btn-close" onclick="closeModal('eventModal2')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><b>Procedure</b><br>
+                    1.    Participants will have to build a model and/or a display board for the project of their choice.<br>
+                    2.    The model or display board should be pre-made or assembled at the time of the event, Participants will be provided 20 minutes to assemble their projects at the venue.<br>
+                    3.    Participants will explain their model or display board in front of esteemed judges.<br>
+                    4.    The judges might ask questions or provide their inputs, The responses of which will be marked separately.<br>
+                    5.    Participants may use their creativity and knowledge to present their ideas involving scientific principle experiments and research. Participants may also use digital aids such as a screen while presenting their projects.<br>
+                    <br><br>
+                    <b>Guidelines</b><br>
+                    1.    You are expected to present a unique and innovative idea for better marks.<br>
+                    2.    The judges' decision will be final and shall not be questioned. <br>
+                    3.    No additional material will be provided at the venue.<br>
+                    4.    Participants should avoid any harmful chemicals or high electric voltages in their projects, Any such instances might cause harm to others.<br>
+                    5. Participants must provide a synopsis of their projects detailing the work, significance, and material used.<br>
+                    6. The results will be category-based for 6-8th and 9-12th.<br>
+                    <br><br>
+                    <B>Evaluation Criteria</B><br>
+                     Originality: 25 marks<br>
+                    Presentation: 20 marks<br>
+                    Scientific temperament: 20 marks<br>
+                    Significance: 20 marks<br>
+                    Responses: 15 marks<br>
+                    </p>
+            </div>
+        </div>
+    </div>
+    <!-- Continue to add modals up to eventModal21... -->
+    <div class="modal" id="eventModal21">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Event 21</h5>
+                <button class="btn-close" onclick="closeModal('eventModal21')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Detailed information about Event 21 goes here.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // script.js
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'block';
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+}
+
+// Close the modal when clicking outside the modal content
+window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach((modal) => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+};
+
+    </script>
+    <script src="script.js"></script>
+    <footer>
+        <p>2024 © Khoj 12.0 . All rights reserved.</p>
+    </footer>
+</body>
+</html>
